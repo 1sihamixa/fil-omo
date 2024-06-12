@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
+
+:root {
+    --colorOne: #20262e;
+    --colorTwo: #913175;
+    --colorThree: #cd5888;
+    --colorFour: #e9e8e8;
+}
+
+.selection {
+    perspective: 1000px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.selection > div {
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: var(--colorThree);
+    border-radius: 15px;
+    box-shadow: 5px 15px 15px var(--colorOne);
+    transition: transform 0.3s ease;
+    width : 450px;
+    height : 300px;
+    margin: 50px;
+}
+
+.selection > div:hover {
+    transform: translateY(-5px);
+}
+
+h2 {
+    font-size: 1.6rem;
+    margin-bottom: 25px;
+    color: var(--colorTwo);
+    text-align: center;
+}
+
+h4 {
+    font-size: 1.2rem;
+    margin: 15px;
+    color: var(--colorTwo);
+    text-align: center;
+}
+
+input[type="file"],
+input[type="color"],button,
+select {
+    padding: 12px;
+    border: 1px solid var(--colorTwo);
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+    background: var(--colorTwo);
+    color: var(--colorFour);
+    margin-left: 15px;
+}
+
+input[type="file"]:hover,
+input[type="color"]:hover,
+select:hover {
+    border-color: var(--colorFour);
+}
+
+
+button {
+    padding: 12px 25px;
+    background-color: var(--colorTwo);
+    color: var(--colorFour);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: var(--colorFour);
+    color: var(--colorTwo);
+}
+
+#extraInputs {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+}
+
+#extraInputs label {
+    margin-right: 10px;
+    font-size: 1.1rem;
+}
+
+#addButton {
+    margin-left: 15px;
+    font-size: 1.5rem;
+    padding: 8px 15px;
+    line-height: 1;
+}
+#clothingType {
+    margin-left: 150px;
+    font-size: 1.5rem;
+    padding: 8px 15px;
+    line-height: 1;
+    margin-bottom: 10px;
+}
+@media screen and (max-width: 600px) {
+    .selection > div {
+        padding: 15px;
+    }
+
+    h2 {
+        font-size: 1.4rem;
+    }
+
+    input[type="file"],
+    input[type="color"],
+    select {
+        padding: 10px;
+        font-size: 0.9rem;
+    }
+
+    button {
+        padding: 10px 20px;
+        font-size: 1.2rem;
+    }
+
+    #addButton {
+        font-size: 1.3rem;
+        padding: 6px 12px;
+    }
+}

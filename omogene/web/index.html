@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../web/style.css">
+    <title>omogene</title>
+</head>
+<body>
+
+    <section class="stage">
+        
+        <canvas id="canvasOne" class=""></canvas>
+        
+        <figure class="ball bubble"></figure>
+        <img src="../images/menu.png" class="menu">
+        <div class="header">
+            <ul>
+                <li style="--i:6;--clr:rgb(145, 49, 117);" data-text="Facebook"><a href="#"><span><i class="fa-brands fa-facebook"></i></span>Facebook</a></li>
+                <li style="--i:5;--clr:rgb(145, 49, 117);" data-text="WhatsApp"><a href="#"><span></span>WhatsApp</a></li>
+                <li style="--i:4;--clr:rgb(145, 49, 117);" data-text="Twitter"><a href="#"><span></span>Twitter</a></li>
+                <li style="--i:3;--clr:rgb(145, 49, 117);" data-text="Instagram"><a href="#"><span></span>Instagram</a></li>
+                <li style="--i:2;--clr:rgb(145, 49, 117);" data-text="YouTube"><a href="#"><span></span>YouTube</a></li>
+                <li style="--i:1;--clr:rgb(145, 49, 117);" data-text="LinkedIn"><a href="#"><span></span>LinkedIn</a></li>    
+            </ul>
+            </div>
+    </section>
+ 
+    <div class="wrapper">
+        <div class="img-area">
+            <div class="single-img img-three">
+                <img src="../images/3-removebg-preview.png">
+            </div>
+            <div class="single-img img-four">
+                <img src="../images/4-removebg-preview.png">
+            </div>
+            <div class="single-img img-five">
+                <img src="../images/5-removebg-preview.png">
+            </div>
+            <div class="single-img img-six">
+                <img src="../images/6-removebg-preview.png">
+            </div>
+            <div class="single-img img-seven">
+                <img src="../images/7-removebg-preview.png">
+            </div>
+            <div class="single-img img-eight">
+                <img src="../images/2-removebg-preview.png">
+            </div>
+            <div class="single-img img-nine">
+                <img src="../images/9-removebg-preview.png">
+            </div>
+        </div>
+    </div>
+      
+    <div class="selection">
+        <h2>Clothing Selection</h2>
+        <form id="clothingForm" action="process.php" method="POST">
+          <div class="form-group">
+            <label for="clothingColor">Choose Clothing Color:</label>
+            <input type="color" id="clothingColor" name="clothingColor[]">
+          </div>
+          <div class="form-group">
+            <label for="clothingType">Choose Clothing Type:</label>
+            <select id="clothingType" name="clothingType[]">
+              <option value="shirt">Shirt</option>
+              <option value="pants">Pants</option>
+              <option value="dress">Dress</option>
+            </select>
+          </div>
+          <div id="extraInputs"></div>
+          <button type="button" id="addButton">+</button>
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+
+    <div class="scroll">
+              <div class="images">
+      
+              <div>
+                 <img src="../scroll/1-removebg-preview (1).png" class="img1">
+              <div class="frame3D right" onmouseover="this.classList.add('paused')" onmouseout="this.classList.remove('paused')">
+              <div class="cylinder">
+                 <div class="circle front"></div>
+                 <div class="circle back"></div>
+              </div>
+              <div class="content">
+                 <h1 class="title1">Nous pouvons planifier vos tenues ensemble</h1>
+                 <p>vous pouvez télécharger des photos de vos vêtements personnels et les organiser dans une base de données numérique, ce qui vous facilitera la sélection et la coordination des vêtements de manière préalable et plus efficace.</p>
+              </div>
+              </div>
+              </div>
+      
+              <div class="paused">
+                  <img src="../scroll/2-removebg-preview.png" class="img2">
+                  <div class="frame3D left" onmouseover="this.classList.add('paused')" onmouseout="this.classList.remove('paused')">
+                      <div class="cylinder">
+                         <div class="circle front"></div>
+                         <div class="circle back"></div>
+                      </div>
+                      <div class="content">
+                  <h1 class="title2">Nous vous faisons gagner du temps</h1>
+                  <p>nous vous proposons des tenues assorties sans avoir à réfléchir longuement et plus rapidement que la recherche manuelle dans les magasins physiques ou en ligne.</p>
+              </div>
+          </div>
+      </div>
+      
+              <div>
+                  <img src="../scroll/3-removebg-preview (1).png" class="img3">
+                  <div class="frame3D right" onmouseover="this.classList.add('paused')" onmouseout="this.classList.remove('paused')">
+                      <div class="cylinder">
+                         <div class="circle front"></div>
+                         <div class="circle back"></div>
+                      </div>
+                      <div class="content">
+                  <h1 class="title3">Nous vous épargnons les efforts</h1>
+                  <p>vous pouvez essayer différentes tenues virtuellement sans avoir besoin de les essayer réellement, ce qui vous fait gagner du temps et des efforts.</p>
+              </div>
+          </div>
+      </div>
+      
+              <div>
+                  <img src="../scroll/4-removebg-preview (1).png" class="img4">
+                  <div class="frame3D left" onmouseover="this.classList.add('paused')" onmouseout="this.classList.remove('paused')">
+                      <div class="cylinder">
+                         <div class="circle front"></div>
+                         <div class="circle back"></div>
+                      </div>
+                      <div class="content">
+                  <h1 class="title4">Nous vous faisons économiser de l'argent</h1>
+                  <p>nous vous proposons des combinaisons de vêtements en utilisant des pièces que vous envisagez d'acheter à l'avenir ou celles que vous avez déjà dans votre garde-robe.</p>
+              </div>
+          </div>
+      </div>
+      
+              <div>
+                  <img src="../scroll/5-removebg-preview.png" class="img5">
+                  <div class="frame3D right" onmouseover="this.classList.add('paused')" onmouseout="this.classList.remove('paused')">
+                      <div class="cylinder">
+                         <div class="circle front"></div>
+                         <div class="circle back"></div>
+                      </div>
+                      <div class="content">
+                  <h1 class="title5">Nous vous inspirons avec de nouvelles idées</h1>
+                  <p>Nous vous proposons une large gamme d'idées et de combinaisons que vous n'avez peut-être pas envisagées, élargissant ainsi vos horizons dans le monde de la mode.</p>
+              </div>
+          </div>
+      </div>
+      
+              <div>
+                  <img src="../scroll/6-removebg-preview.png" class="img6">
+                  <div class="frame3D left" onmouseover="this.classList.add('paused')" onmouseout="this.classList.remove('paused')">
+                      <div class="cylinder">
+                         <div class="circle front"></div>
+                         <div class="circle back"></div>
+                      </div>
+                      <div class="content">
+                  <h1 class="title6">Nous vous proposons des conseils techniques</h1>
+                  <p>nous vous donnons des détails techniques sur la manière de porter des vêtements correctement, tels que les façons de nouer les écharpes ou de choisir les accessoires appropriés.</p>
+              </div>
+          </div>
+      </div>
+      
+              <div>
+                  <img src="../scroll/7-removebg-preview-removebg-preview.png" class="img7">
+                  <div class="frame3D right" onmouseover="this.classList.add('paused')" onmouseout="this.classList.remove('paused')">
+                      <div class="cylinder">
+                         <div class="circle front"></div>
+                         <div class="circle back"></div>
+                      </div>
+                      <div class="content">
+                  <h1 class="title7">Nous vous guidons vers les marques et les magasins</h1>
+                  <p>nous vous fournissons des informations sur les marques et les magasins qui proposent les vêtements que vous préférez, ce qui vous permet de trouver l'endroit idéal pour acheter vos vêtements.</p>
+              </div>
+          </div>
+      </div>
+      
+              <div>
+                  <img src="../scroll/8-removebg-preview (1).png" class="img8">
+                  <div class="frame3D left" onmouseover="this.classList.add('paused')" onmouseout="this.classList.remove('paused')">
+                      <div class="cylinder">
+                         <div class="circle front"></div>
+                         <div class="circle back"></div>
+                      </div>
+                      <div class="content">
+                  <h1 class="title8">Partagez avec vos amis</h1>
+                  <p>partagez les tenues que vous avez créées avec vos amis et obtenez leurs opinions et commentaires.</p>
+              </div>
+          </div>
+      </div>
+      
+              <div>
+                  <img src="../scroll/10-removebg-preview (1).png"class="img9">
+                  <div class="frame3D right" onmouseover="this.classList.add('paused')" onmouseout="this.classList.remove('paused')">
+                      <div class="cylinder">
+                         <div class="circle front"></div>
+                         <div class="circle back"></div>
+                      </div>
+                      <div class="content">
+                  <h1 class="title9">Nous nous soucions de vous</h1>
+                  <p>nous vous proposons nos recommandations personnalisées en fonction de vos goûts personnels, de votre style et de vos choix historiques.</p>
+              </div>
+          </div>
+      </div>
+</div>
+</div>
+<div class="footer">
+        <ul>
+            <li>
+              <a href="#">
+                <i class="fab fa-facebook-f icon"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-twitter icon"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-linkedin-in icon"></i></a></li>
+            <li>
+              <a href="#"><i class="fab fa-google-plus-g icon"></i></a></li>
+          </ul>
+          <div id="foo" class="ballFooter"></div>
+    </div>
+    
+    <script src="../web/javascript/canvas.js"></script>
+    <script src="../web/javascript/technique.js"></script>
+    <script src="../web/javascript/script.js"></script>
+</body>
+</html>
